@@ -133,7 +133,7 @@ body {
 
 h1 {
   color: var(--light_slate_grey);
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -156,6 +156,7 @@ p a[href]:visited {
 }
 
 main {
+  padding: 2em 0;
   padding-left: calc(25vw - 200px);
   max-width: calc(200px + 48vw);
   background-color: #fdf5e6ff;
@@ -168,13 +169,21 @@ main .tmpl-post li {
 }
 
 article {
-  padding: 0 1em;
+  padding: 1em;
   width: auto;
 }
 
 /* Natural flow and rhythm in articles by default */
-article > *+* {
+main > *+*,
+article > *+*,
+blockquote > *+* {
   margin-top: 1em;
+}
+
+blockquote {
+  padding: 1em 1em 1em 2em;
+  background-color: var(--pale_grey);
+  border-left: 8px solid var(--nice_blue);
 }
 
 .article-footer {
@@ -195,7 +204,7 @@ header:after {
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 2em;
   background-image: linear-gradient(to right, var(--azure), var(--ruby));
   display: flex;
   justify-content: flex-end;

@@ -27,6 +27,6 @@ I liked this crystallisation of a thought I've only ever had more fuzzily:
 >
 > Why is that so hard?
 
-From (Robin Sloan's newsletter)[https://buttondown.email/year-of-the-meteor/archive/week-48-doesnt-have-a-cat/]
+From [Robin Sloan's newsletter](https://buttondown.email/year-of-the-meteor/archive/week-48-doesnt-have-a-cat/)
 
 I suppose (in a nutshell if I can) the angle I'm interested in is the ways in which states and state-like institutions might be more aware of and responsive to what people want and need, if only they could get beyond price/purchasing/consumption as the only facet of people that's deemed interesting (the Hayekian/market view). The counterpoint to this, I guess, is that "talk is cheap"; what really tells you what people value is what they spend money on. But that just seems false, for the reasons Sloan hints at.

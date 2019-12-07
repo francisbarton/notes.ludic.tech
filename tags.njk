@@ -18,6 +18,6 @@ permalink: /tags/{{ tag }}/
 ---
 <h1>#{{ tag }}</h1>
 
-{% set postslist = collections[ tag ] %}
+{% set noteslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 <p><a href="{{ '/tags/' | url }}">all the tags</a></p>
