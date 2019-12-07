@@ -81,6 +81,8 @@ select {
   }
 }
 
+/* end of CSS reset */
+
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
@@ -180,7 +182,7 @@ footer {
   background-image: linear-gradient(to right, var(--azure), var(--ruby));
   display: flex;
 }
-.footer-content {
+#footer-content {
   color: var(--almost_dark);
   font-weight: bold;
   font-size: 80%;
@@ -198,9 +200,6 @@ code {
   line-height: 1.5;
 }
 pre {
-  font-size: 12px;
-  line-height: 1.375;
-  direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -377,6 +376,13 @@ ul.nav {
   border: 0.25em solid var(--light_slate_grey);
   border-radius: 0.25em;
   text-decoration: none;
+}
+.tag:focus {
+  /* thanks Kevin Powell https://www.youtube.com/watch?v=Mvu5OMGcdVA */
+  box-shadow:
+  0 0 0 2px var(--old_lace),
+  0 0 0 4px var(--light_slate_grey);
+  /* border-radius: 0; */
 }
 .tags_page {
 	/* when tags are displayed on the tags page, make them display better/bigger */

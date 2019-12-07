@@ -7,7 +7,7 @@ eleventyNavigation:
 
 <h1>latest notes&hellip;</h1>
 
-{% set postslist = collections.notes | head(-10) %}
+{% set noteslist = collections.notes | head(-10) %}
 {% include "postslist.njk" %}
 
 <p>Older notes can be found in <a href="{{ '/notes/' | url }}">the archive</a></p>
