@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
-
+<article>
 {{ content | safe }}
-
-<p><a href="{{ '/' | url }}">&#8662; home</a></p>
+</article>
+<p class="article-footer"><a href="{{ '/' | url }}">&#8662; home</a></p>

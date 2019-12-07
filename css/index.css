@@ -104,6 +104,7 @@ select {
   --blanched_almond: #fce6c9;
   --zinc_white: #fdf8ff;
   --old_lace: #fdf5e6;
+  --rum_swizzle: #f9f8e4;
   --pink_light: #ffb6c1;
   --pale_grey: #fdfdfe;
   --dusty_teal: #4c9085;
@@ -125,24 +126,19 @@ body {
   margin: 0;
   color: var(--almost_dark);
   background-color: var(--old_lace);
+  background-image: url("/img/circles.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 h1 {
   color: var(--light_slate_grey);
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 p:last-child {
   margin-bottom: 0;
-}
-
-p,
-pre,
-.tmpl-post li,
-img {
-  max-width: 60em;
-  /* 960px /16 */
-  width: calc(150px + 45vw);
 }
 
 p,
@@ -160,17 +156,30 @@ p a[href]:visited {
 }
 
 main {
-  padding: 6rem 22vw 2rem 11vw;
+  padding-left: calc(25vw - 200px);
+  max-width: calc(200px + 48vw);
+  background-color: #fdf5e6ff;
+}
+
+main p,
+main pre,
+main .tmpl-post li {
+  max-width: 48em;
+}
+
+article {
+  padding: 0 1em;
+  width: auto;
 }
 
 /* Natural flow and rhythm in articles by default */
-main>*+* {
+article > *+* {
   margin-top: 1em;
 }
 
 .article-footer {
   border-top: 1px dotted var(--dark_slate_grey);
-  padding-top: 0.5em;
+  padding: 1em;
 }
 
 header {
@@ -187,7 +196,6 @@ header:after {
 
 footer {
   margin-top: 3rem;
-  padding-left: 11vw;
   background-image: linear-gradient(to right, var(--azure), var(--ruby));
   display: flex;
   justify-content: flex-end;
@@ -198,7 +206,7 @@ footer {
   background-color: transparent;
   font-weight: bold;
   font-size: 100%;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 #footer-content a {
@@ -210,6 +218,17 @@ footer {
   text-underline-offset: 0.15em;
   text-decoration-color: #ffffd466;
 }
+
+/*
+#svg-circle {
+  position: fixed;
+  top: -25vw;
+  left: -25vw;
+  width: 150vw;
+  height: 150vw;
+  z-index: 0;
+}
+*/
 
 pre,
 code {
@@ -230,7 +249,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .highlight-line {
@@ -248,7 +267,7 @@ pre {
 }
 
 /* avoid double line breaks when using display: block; */
-.highlight-line+br {
+.highlight-line + br {
   display: none;
 }
 
@@ -270,33 +289,38 @@ pre {
   background-color: #902f2f;
 }
 
-/* Header */
+/* header */
 .home {
   padding: 0;
   float: left;
   margin: 1rem 0 0 5vw;
-  /* 16px /16 */
-  font-size: 1.25em;
-  /* 16px /16 */
   /* border-bottom: 2px dotted var(--ruby); */
 }
 
 .home a {
   color: var(--ruby);
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.home :link {
-  /* .home :link:not(:hover) { */
-  text-decoration: none;
+  text-decoration: dotted 0.15em underline var(--ruby);
+  text-decoration-skip-ink: auto;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(202, 1, 71, 0.1);
+  text-decoration-thickness: 6em;
+  text-underline-offset: 2em;
+  transition-property: text-decoration-color, text-decoration-thickness, text-underline-offset;
+  transition-duration: 5s;
 }
 
 .home :link:hover {
-  border-bottom: 2px dotted var(--ruby);
+  text-decoration-style: dotted;
+  text-decoration-color: var(--ruby);
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.05em;
+  transition-timing-function: ease;
+  transition-property: text-decoration-color, text-decoration-thickness, text-underline-offset;
+  transition-duration: 5s;
+  transition-timing-function: ease;
 }
 
-/* Nav */
+/* nav */
 ul.nav {
   padding: 0;
   list-style: none;
@@ -306,36 +330,33 @@ ul.nav {
 
 .nav-item {
   display: inline-block;
-  text-transform: lowercase;
   margin-right: 1em;
+}
+.nav-item :link {
+  text-transform: lowercase;
   font-weight: 700;
-  border-bottom: 4px transparent;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 }
-
-.nav-item:hover {
-  border-bottom: 4px solid var(--cerulean);
-}
-
-.nav-item a {
+.nav-item :link:hover {
   color: var(--cerulean);
-  text-decoration: none;
+  text-decoration-color: var(--cerulean);
+  text-decoration-style: solid;
+  text-underline-offset: 0;
+  text-decoration-thickness: 0.5em;
 }
 
-.nav-item a[href]:hover {
-  text-decoration: none;
-}
-
-.nav-item-active {
-  border-bottom: 4px solid var(--light_slate_grey);
-}
-
-.nav-item-active a {
-  text-decoration: none;
+.nav-item-active :link {
   color: var(--light_slate_grey);
+  text-decoration: underline;
+  text-decoration-color: var(--light_slate_grey);
+  text-underline-offset: 0;
+  text-decoration-thickness: 0.5em;
 }
 
-.nav-item-active:hover a {
+.nav-item-active :link:hover {
   color: var(--cerulean);
+  text-decoration-color: var(--cerulean);
 }
 
 .pages_list {
