@@ -1,6 +1,6 @@
 ---
 title: Hayek and sensing more widely
-description: Brief thought from RObin Sloan's newsletter
+description: Brief thought from Robin Sloan's newsletter
 tags:
   - notes
 layout: layouts/post.njk

@@ -6,7 +6,7 @@ tags:
   - pages
 eleventyNavigation:
   key: pinboard
-  order: 5
+  order: 4
 date: 2019-10-04
 templateClass: tmpl-page
 ---

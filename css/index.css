@@ -49,6 +49,8 @@ ol[class] {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.15em;
 }
 
 /* Make images easier to work with */
@@ -86,7 +88,7 @@ select {
   --navy: #17050f;
   --tiber: #082840;
   --white: #fff;
-  --almost_dark: #1b2431; /* chirag: mirage */
+  --almost_dark: #1b2431;
   --ruby: #ca0147;
   --azure: #069af3;
   --cerulean: #0485d1;
@@ -186,6 +188,7 @@ footer {
   padding-left: 11vw;
   background-image: linear-gradient(to right, var(--azure), var(--ruby));
   display: flex;
+  justify-content: flex-end;
 }
 
 #footer-content {
@@ -193,11 +196,7 @@ footer {
   background-color: transparent;
   font-weight: bold;
   font-size: 100%;
-  /* background-image: linear-gradient(var(--light_grey), var(--old_lace)); */
   padding: 40px 0;
-  width: 100vw;
-  text-align: center;
-  width: calc(150px + 45vw);
 }
 
 #footer-content a {
@@ -207,7 +206,7 @@ footer {
 
 pre,
 code {
-  font-family: Hack, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: Hasklig, Hack, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 
@@ -363,6 +362,10 @@ ul.nav {
   list-style: none;
   padding: 0;
 }
+.postlist2 {
+  list-style: none;
+  padding: 0;
+}
 
 .postlist-item {
   counter-increment: start-from -1;
@@ -378,9 +381,12 @@ ul.nav {
 
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.875em;
-  /* 14px /16 */
+  font-size: 0.875em; /* 14px /16 */
   color: var(--darkgray);
+}
+
+.postlist2 .postlist-item::before {
+  content: "";
 }
 
 .postlist-date {
@@ -389,10 +395,12 @@ ul.nav {
 
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em;
-  /* 4px 3px /16 */
+  padding: 0.25em 0.375em; /* 4px 6px /16 */
   color: var(--cerulean);
-  text-decoration: underline solid 0.125em;
+/*  text-decoration: underline solid 0.125em;*/
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.15em;
   /* border-bottom: 2px solid var(--cerulean); */
 }
 

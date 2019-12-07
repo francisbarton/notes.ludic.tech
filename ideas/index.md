@@ -6,7 +6,7 @@ tags:
   - pages
 eleventyNavigation:
   key: ideas
-  order: 4
+  order: 3
 date: 2019-10-03
 templateClass: tmpl-page
 ---

@@ -1,8 +1,9 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ noteslist.length + 1 }}">
+<!--<ol reversed class="postlist" style="counter-reset: start-from {{ noteslist.length + 1 }}">-->
+<ul class="postlist2">
 {% for note in noteslist | reverse %}
   <li class="postlist-item{% if note.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ note.url | url }}" class="postlist-link">{% if note.data.title %}{{ note.data.title }}{% else %}<code>{{ note.url }}</code>{% endif %}</a>
     <time class="postlist-date" datetime="{{ note.date | htmlDateString }}">{{ note.date | readableDate }}</time>
+    <a href="{{ note.url | url }}" class="postlist-link">&nbsp;{% if note.data.title %}{{ note.data.title }}{% else %}<code>{{ note.url }}</code>{% endif %}&nbsp;</a>
     {% for tag in note.data.tags %}
       {%- if tag != "notes" -%}
       {% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -11,4 +12,5 @@
     {% endfor %}
   </li>
 {% endfor %}
-</ol>
+</ul>
+<!--</ol>-->
