@@ -32,6 +32,7 @@
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
-    "core-js": "^3.4.7"
+    "core-js": "^3.4.7",
+    "eleventy-plugin-markdown-shortcode": "^1.0.1"
   }
 }
