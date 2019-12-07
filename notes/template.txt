@@ -1,0 +1,8 @@
+---
+title: template
+description:
+tags:
+  - notes
+layout: layouts/post.njk
+eleventyExcludeFromCollections: true
+---

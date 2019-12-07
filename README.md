@@ -3,6 +3,7 @@
 My version of the [Eleventy](https://github.com/11ty/eleventy) static site generator, using [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog). This repo uses netlify to make my [experimental notes site](https://notes.ludic.tech).
 
 [![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/62bad7f0-35de-4446-8d71-709fc50ecb20/deploy-status)](https://app.netlify.com/sites/notes-ludic-tech/deploys)
 
 ### Saturday 2019-12-07
 This is, like, the fifth time I have tried to make this blog with eleventy. Something went wrong with the last go and I made it worse by trying to fix it, and I didn't do sufficiently regular git commits to do a revert I was happy with, so here I am like an idiot trying again.
