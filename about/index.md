@@ -1,10 +1,14 @@
 ---
 layout: layouts/post.njk
-title: About Me
-templateClass: tmpl-post
+title: about
+tags:
+  - nav
+  - pages
 eleventyNavigation:
-  key: About Me
+  key: about
   order: 2
+date: 2019-10-02
+templateClass: tmpl-post
 ---
 
-I am a person that writes stuff.
+internet connoisseur

@@ -2,7 +2,7 @@
 title: Hayek and sensing more widely
 description: Brief thought from RObin Sloan's newsletter
 tags:
-  - posts
+  - notes
 layout: layouts/post.njk
 ---
 
