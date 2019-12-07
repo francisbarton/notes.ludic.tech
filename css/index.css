@@ -1,7 +1,6 @@
 /* A modern CSS reset by Andy Bell */
 /* https://hankchizljaw.com/wrote/a-modern-css-reset/ */
 /* https://raw.githubusercontent.com/hankchizljaw/modern-css-reset/master/src/reset.css */
-
 /* Box sizing rules */
 *,
 *::before,
@@ -77,7 +76,6 @@ select {
 }
 
 /* end of CSS reset */
-
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
@@ -86,7 +84,7 @@ select {
   --light_slate_grey: #778899;
   --dark_slate_grey: #303030;
   --navy: #17050f;
-  --blue: #082840;
+  --tiber: #082840;
   --white: #fff;
   --almost_dark: #1b2431; /* chirag: mirage */
   --ruby: #ca0147;
@@ -112,9 +110,11 @@ select {
   --dull_blue: #49759c;
   --neon_blue: #04d9ff;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   padding: 0;
@@ -122,49 +122,59 @@ body {
   color: var(--almost_dark);
   background-color: var(--old_lace);
 }
+
 h1 {
   color: var(--light_slate_grey);
   margin-bottom: 2rem;
 }
+
 p:last-child {
   margin-bottom: 0;
 }
+
 p,
 pre,
 .tmpl-post li,
 img {
-  max-width: 60em; /* 960px /16 */
+  max-width: 60em;
+  /* 960px /16 */
   width: calc(150px + 45vw);
 }
+
 p,
 .tmpl-post li {
   line-height: 1.625em;
 }
+
 p a[href] {
   color: var(--cerulean);
   font-weight: bold;
 }
+
 p a[href]:visited {
   color: var(--navy);
 }
+
 main {
   padding: 6rem 22vw 2rem 11vw;
 }
+
 /* Natural flow and rhythm in articles by default */
-main > * + * {
+main>*+* {
   margin-top: 1em;
 }
 
 .article-footer {
-	border-top: 1px dotted var(--dark_slate_grey);
-	padding-top: 0.5em;
+  border-top: 1px dotted var(--dark_slate_grey);
+  padding-top: 0.5em;
 }
 
 header {
   /* border-bottom: 2px dotted var(--ruby); */
   border-bottom: 4px solid var(--light_slate_grey);
-	padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
+
 header:after {
   content: "";
   display: table;
@@ -177,6 +187,7 @@ footer {
   background-image: linear-gradient(to right, var(--azure), var(--ruby));
   display: flex;
 }
+
 #footer-content {
   color: var(--eggshell);
   background-color: transparent;
@@ -188,20 +199,18 @@ footer {
   text-align: center;
   width: calc(150px + 45vw);
 }
+
 #footer-content a {
   color: var(--eggshell);
   background-color: transparent;
 }
-#footer-content code {
-  font-style: normal;
-  font-weight: 400;
-}
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: Hack, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
+
 pre {
   text-align: left;
   white-space: pre;
@@ -221,28 +230,36 @@ pre {
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
-  text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
+  text-decoration: none;
+  /* override del, ins, mark defaults */
+  color: inherit;
+  /* override del, ins, mark defaults */
 }
+
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
   content: " ";
 }
+
 /* avoid double line breaks when using display: block; */
-.highlight-line + br {
+.highlight-line+br {
   display: none;
 }
+
 .highlight-line-isdir {
   color: #b0b0b0;
   background-color: #222;
 }
+
 .highlight-line-active {
   background-color: #444;
   background-color: hsla(0, 0%, 27%, .8);
 }
+
 .highlight-line-add {
   background-color: #45844b;
 }
+
 .highlight-line-remove {
   background-color: #902f2f;
 }
@@ -251,19 +268,24 @@ pre {
 .home {
   padding: 0;
   float: left;
-  margin: 1rem 0 0 5vw; /* 16px /16 */
-  font-size: 1.25em; /* 16px /16 */
+  margin: 1rem 0 0 5vw;
+  /* 16px /16 */
+  font-size: 1.25em;
+  /* 16px /16 */
   /* border-bottom: 2px dotted var(--ruby); */
 }
+
 .home a {
   color: var(--ruby);
   font-size: 1.5em;
   font-weight: bold;
 }
+
 .home :link {
-/* .home :link:not(:hover) { */
+  /* .home :link:not(:hover) { */
   text-decoration: none;
 }
+
 .home :link:hover {
   border-bottom: 2px dotted var(--ruby);
 }
@@ -275,6 +297,7 @@ ul.nav {
   float: right;
   margin: 1rem 0 0 2rem;
 }
+
 .nav-item {
   display: inline-block;
   text-transform: lowercase;
@@ -282,47 +305,57 @@ ul.nav {
   font-weight: 700;
   border-bottom: 4px transparent;
 }
+
 .nav-item:hover {
   border-bottom: 4px solid var(--cerulean);
 }
+
 .nav-item a {
   color: var(--cerulean);
   text-decoration: none;
 }
+
 .nav-item a[href]:hover {
   text-decoration: none;
 }
+
 .nav-item-active {
   border-bottom: 4px solid var(--light_slate_grey);
 }
+
 .nav-item-active a {
   text-decoration: none;
   color: var(--light_slate_grey);
 }
+
 .nav-item-active:hover a {
   color: var(--cerulean);
 }
 
 .pages_list {
-	border-collapse: collapse;
-	border-spacing: 0;
-	table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
 }
+
 .pages_list th {
-	text-align: left;
-	padding: 0.125em 1em;
-	border-bottom: 2px solid var(--light_slate_grey);
+  text-align: left;
+  padding: 0.125em 1em;
+  border-bottom: 2px solid var(--light_slate_grey);
 }
+
 .pages_list td {
-	padding: 0.25em 1em;
-	border-bottom: 1px dotted var(--light_slate_grey);
-	/* border-top: 1px dotted var(--light_slate_grey); */
+  padding: 0.25em 1em;
+  border-bottom: 1px dotted var(--light_slate_grey);
+  /* border-top: 1px dotted var(--light_slate_grey); */
 }
+
 .col1 {
-	width: 40%;
+  width: 40%;
 }
+
 .col2 {
-	width: 60%;
+  width: 60%;
 }
 
 /* Notes list */
@@ -330,36 +363,46 @@ ul.nav {
   list-style: none;
   padding: 0;
 }
+
 .postlist-item {
   counter-increment: start-from -1;
 }
+
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) "__";
+  content: ""counter(start-from, decimal-leading-zero) "__";
   line-height: 100%;
   text-align: right;
 }
+
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.875em; /* 14px /16 */
+  font-size: 0.875em;
+  /* 14px /16 */
   color: var(--darkgray);
 }
+
 .postlist-date {
   word-spacing: -0.5px;
 }
+
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding: 0.25em 0.1875em;
+  /* 4px 3px /16 */
   color: var(--cerulean);
   text-decoration: underline solid 0.125em;
   /* border-bottom: 2px solid var(--cerulean); */
 }
+
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
+
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
+  font-size: 1.1875em;
+  /* 19px /16 */
   font-weight: 700;
 }
 
@@ -369,9 +412,12 @@ ul.nav {
   display: inline-block;
   vertical-align: super;
   /* text-transform: uppercase; */
-  font-size: 0.75em; /* 12px /16 */
-  padding: 0 0.25em; /* 3px /12 */
-  margin-left: 0.75em; /* 9px /12 */
+  font-size: 0.75em;
+  /* 12px /16 */
+  padding: 0 0.25em;
+  /* 3px /12 */
+  margin-left: 0.75em;
+  /* 9px /12 */
   color: var(--old_lace);
   font-weight: 600;
   background-color: var(--cerulean);
@@ -379,25 +425,30 @@ ul.nav {
   border-radius: 0.25em;
   text-decoration: none;
 }
+
 .tag:focus {
   /* thanks Kevin Powell https://www.youtube.com/watch?v=Mvu5OMGcdVA */
   box-shadow:
-  0 0 0 2px var(--old_lace),
-  0 0 0 4px var(--light_slate_grey);
+    0 0 0 2px var(--old_lace),
+    0 0 0 4px var(--light_slate_grey);
   /* border-radius: 0; */
 }
+
 .tags_page {
-	/* when tags are displayed on the tags page, make them display better/bigger */
-	font-size: 1em;
-	padding: 0.25em; /* 6px /16 */
-	margin: 1em;
+  /* when tags are displayed on the tags page, make them display better/bigger */
+  font-size: 1em;
+  padding: 0.25em;
+  /* 6px /16 */
+  margin: 1em;
 }
 
 /* Warning */
 .warning {
   background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
+  padding: 1em 0.625em;
+  /* 16px 10px /16 */
 }
+
 .warning ol:only-child {
   margin: 0;
 }
@@ -409,13 +460,15 @@ ul.nav {
   font-style: normal;
   margin-left: .1em;
 }
+
 a[href].direct-link,
 a[href].direct-link:visited {
   color: transparent;
 }
+
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
-:hover > a[href].direct-link,
-:hover > a[href].direct-link:visited {
+:hover>a[href].direct-link,
+:hover>a[href].direct-link:visited {
   color: #aaa;
 }
