@@ -48,9 +48,11 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  text-decoration-skip-ink: none;
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: 0.15em;
+  text-decoration-thickness: 0.1em;
   text-underline-offset: 0.15em;
+  text-decoration-color: #7898;
 }
 
 /* Make images easier to work with */
@@ -202,6 +204,11 @@ footer {
 #footer-content a {
   color: var(--eggshell);
   background-color: transparent;
+  text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.15em;
+  text-decoration-color: #ffffd466;
 }
 
 pre,
