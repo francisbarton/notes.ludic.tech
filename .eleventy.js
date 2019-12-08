@@ -12,8 +12,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
     templateFormats: ["*"]
   });
-  eleventyConfig.addPlugin(markdownShortcode);
+  eleventyConfig.addPlugin(markdownShortcode, {
+    html: true,
+    linkify: true,
+    typographer: true,
+  });
   eleventyConfig.addPlugin(pluginNavigation);
+
+  eleventyConfig.addShortcode("social", function(name, icon, url) {
+    return `<span><a href="${url}" alt="${name}"><i class="${icon}"></i></a>
+      </span>`;
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 

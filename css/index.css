@@ -191,6 +191,27 @@ blockquote {
   padding: 1em;
 }
 
+#socials {
+  text-align: right;
+  margin-top: 1em;
+}
+.social a {
+  margin: 0 2px;
+}
+.social i {
+  font-size: 2em;
+  padding: 2px;
+}
+.social i:hover {
+  color: var(--neon_blue);
+}
+i.fab {
+  font-weight: 400;
+}
+i.fas {
+  font-weight: 900;
+}
+
 header {
   /* border-bottom: 2px dotted var(--ruby); */
   border-bottom: 4px solid var(--light_slate_grey);

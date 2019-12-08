@@ -1,0 +1,5 @@
+<p id="socials">
+  {% for social in socials %}
+  <span class="social"><a href="{{ social.url }}" title="{{ social.name }}"><i class="{{ social.icon }}"></i></a></span>
+  {% endfor %}
+</p>

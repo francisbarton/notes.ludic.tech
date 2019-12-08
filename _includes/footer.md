@@ -1,4 +1,3 @@
-[&nbsp;eleventy&nbsp;](https://11ty.dev/)
-[&nbsp;eleventy-base-blog&nbsp;](https://github.com/11ty/eleventy-base-blog)
-[&nbsp;netlify&nbsp;](https://netlify.com/)
-<i class="fab fa-github"></i>(https://github.com/francisbarton/notes.ludic.tech/)
+[[&nbsp;eleventy&nbsp;](https://11ty.dev/)]
+[[&nbsp;eleventy-base-blog&nbsp;](https://github.com/11ty/eleventy-base-blog)]
+[[&nbsp;netlify&nbsp;](https://netlify.com/)]

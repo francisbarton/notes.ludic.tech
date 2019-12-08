@@ -1,0 +1,42 @@
+[
+  {
+    "name": "github",
+    "icon": "fab fa-github",
+    "url": "https://github.com/francisbarton"
+  },
+  {
+    "name": "twitter",
+    "icon": "fab fa-twitter",
+    "url": "https://twitter.com/ludictech"
+  },
+  {
+    "name": "keybase",
+    "icon": "fab fa-keybase",
+    "url": "https://keybase.io/fbarton"
+  },
+  {
+    "name": "soundcloud",
+    "icon": "fab fa-soundcloud",
+    "url": "https://soundcloud.com/francisbarton"
+  },
+  {
+    "name": "pinboard",
+    "icon": "fas fa-thumbtack",
+    "url": "https://pinboard.in/u:oddhack/"
+  },
+  {
+    "name": "wordpress",
+    "icon": "fab fa-wordpress",
+    "url": "https://ludictechnologies.wordpress.com/"
+  },
+  {
+    "name": "are.na",
+    "icon": "fas fa-asterisk",
+    "url": "https://are.na/francisbarton"
+  },
+  {
+    "name": "alwaysdata",
+    "icon": "fas fa-server",
+    "url": "https://alwaysdata.net/"
+  }
+]
