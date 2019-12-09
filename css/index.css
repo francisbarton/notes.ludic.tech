@@ -94,6 +94,7 @@ select {
   --ruby: #ca0147;
   --azure: #069af3;
   --cerulean: #0485d1;
+  --orient: #01587d;
   --nice_blue: #107ab0;
   --denim: #3b638c;
   --cadet_blue: #4e7496;
@@ -147,7 +148,7 @@ p,
 }
 
 p a[href] {
-  color: var(--cerulean);
+  color: var(--orient);
   font-weight: bold;
 }
 
@@ -369,8 +370,8 @@ ul.nav {
   text-decoration-color: transparent;
 }
 .nav-item :link:hover {
-  color: var(--cerulean);
-  text-decoration-color: var(--cerulean);
+  color: var(--orient);
+  text-decoration-color: var(--orient);
   text-decoration-style: solid;
   text-underline-offset: 0;
   text-decoration-thickness: 0.5em;
@@ -385,8 +386,8 @@ ul.nav {
 }
 
 .nav-item-active :link:hover {
-  color: var(--cerulean);
-  text-decoration-color: var(--cerulean);
+  color: var(--orient);
+  text-decoration-color: var(--orient);
 }
 
 .pages_list {
@@ -454,12 +455,12 @@ ul.nav {
 .postlist-link {
   display: inline-block;
   padding: 0.25em 0.375em; /* 4px 6px /16 */
-  color: var(--cerulean);
+  color: var(--orient);
 /*  text-decoration: underline solid 0.125em;*/
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.15em;
-  /* border-bottom: 2px solid var(--cerulean); */
+  /* border-bottom: 2px solid var(--orient); */
 }
 
 .postlist-item-active .postlist-link {
@@ -486,7 +487,7 @@ ul.nav {
   /* 9px /12 */
   color: var(--old_lace);
   font-weight: 600;
-  background-color: var(--cerulean);
+  background-color: var(--orient);
   border: 0.25em solid var(--light_slate_grey);
   border-radius: 0.25em;
   text-decoration: none;
