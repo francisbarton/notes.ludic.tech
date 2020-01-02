@@ -46,7 +46,7 @@ ol[class] {
   list-style: none;
 }
 
-/* A elements that don't have a class get default styles */
+/* anchor elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: none;
   text-decoration-skip-ink: auto;
@@ -529,7 +529,7 @@ a[href].direct-link:visited {
 
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
-:hover>a[href].direct-link,
-:hover>a[href].direct-link:visited {
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
   color: #aaa;
 }
