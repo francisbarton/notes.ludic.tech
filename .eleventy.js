@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownShortcode = require("eleventy-plugin-markdown-shortcode");
+const typesetPlugin = require('eleventy-plugin-typeset');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -17,6 +18,10 @@ module.exports = function(eleventyConfig) {
     linkify: true,
     typographer: true,
   });
+  eleventyConfig.addPlugin(typesetPlugin({
+    only: 'article', // Run only on HTML content within a certain CSS selector
+    disable: ['smallCaps'] // Disable typesetting feature 'smallCaps'
+  }));
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.addShortcode("social", function(name, icon, url) {
