@@ -32,6 +32,7 @@
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "core-js": "^3.6.1",
     "eleventy-plugin-markdown-shortcode": "^1.0.1",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset"
