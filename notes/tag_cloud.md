@@ -15,7 +15,7 @@ There are a couple of things I would like to do to tinker with base eleventy: a 
 ## Laying out the challenge
 So I was looking at the `tags-list.njk` bit of eleventy, which looks like this:
 
-```twig
+```liquid
 {%- raw -%}
 ---
 permalink: /tags/
