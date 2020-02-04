@@ -16,8 +16,8 @@ templateClass: tmpl-page
 some projects I am working on
 
 ## links
-* [are.na](are.na/francisbarton)
-* [twitter](twitter.com/ludictech)
+* [are.na](https://are.na/francisbarton)
+* [twitter](https://twitter.com/ludictech)
 * My UMA (to come)
-* [zotero](zotero.org/francisbarton)
-* [pinboard links](pinboard.in/u:oddhack)
+* [zotero](https://zotero.org/francisbarton)
+* [pinboard links](https://pinboard.in/u:oddhack)
